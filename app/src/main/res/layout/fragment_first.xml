@@ -53,5 +53,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sound_si"
-    />
+        />
+    <Button
+        android:id="@+id/button_DO2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sound_do2"
+        />
 </LinearLayout>

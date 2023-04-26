@@ -32,10 +32,39 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val mp = MediaPlayer.create(requireContext(), R.raw.g5)
+        val mp = MediaPlayer.create(requireContext(), R.raw.do1)
         binding.buttonDo.setOnClickListener {
             mp.start()
         }
+        val mp1 = MediaPlayer.create(requireContext(), R.raw.re)
+        binding.buttonRe.setOnClickListener {
+            mp1.start()
+        }
+        val mp2 = MediaPlayer.create(requireContext(), R.raw.mi)
+        binding.buttonMi.setOnClickListener {
+            mp2.start()
+        }
+        val mp3 = MediaPlayer.create(requireContext(), R.raw.fa)
+        binding.buttonFa.setOnClickListener {
+            mp3.start()
+        }
+        val mp4 = MediaPlayer.create(requireContext(), R.raw.so)
+        binding.buttonSol.setOnClickListener {
+            mp4.start()
+        }
+        val mp5 = MediaPlayer.create(requireContext(), R.raw.la)
+        binding.buttonLa.setOnClickListener {
+            mp5.start()
+        }
+        val mp6 = MediaPlayer.create(requireContext(), R.raw.si)
+        binding.buttonSi.setOnClickListener {
+            mp6.start()
+        }
+        val mp7 = MediaPlayer.create(requireContext(), R.raw.do2)
+        binding.buttonDO2.setOnClickListener {
+            mp7.start()
+        }
+
     }
 
     override fun onDestroyView() {
