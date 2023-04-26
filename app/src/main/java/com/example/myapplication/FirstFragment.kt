@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -31,8 +32,9 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        val mp = MediaPlayer.create(requireContext(), R.raw.g5)
         binding.buttonFirst.setOnClickListener {
+            mp.start()
         }
     }
 
