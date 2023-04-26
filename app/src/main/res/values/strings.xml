@@ -4,7 +4,13 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Make Sound</string>
+    <string name="sound_do">Do</string>
+    <string name="sound_re">Re</string>
+    <string name="sound_mi">Mi</string>
+    <string name="sound_fa">Fa</string>
+    <string name="sound_sol">Sol</string>
+    <string name="sound_la">La</string>
+    <string name="sound_si">Si</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>

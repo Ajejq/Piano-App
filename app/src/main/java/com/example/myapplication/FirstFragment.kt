@@ -33,7 +33,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val mp = MediaPlayer.create(requireContext(), R.raw.g5)
-        binding.buttonFirst.setOnClickListener {
+        binding.buttonDo.setOnClickListener {
             mp.start()
         }
     }
