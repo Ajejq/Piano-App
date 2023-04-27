@@ -63,9 +63,13 @@ class FirstFragment : Fragment() {
         binding.buttonDO2.setOnClickListener {
             mp7.start()
         }
-        val mp8 = MediaPlayer.create(requireContext(), R.raw.note_c2)
+        val mp8 = MediaPlayer.create(requireContext(), R.raw.c5)
         binding.buttoncis.setOnClickListener {
             mp8.start()
+        }
+        val mp9 = MediaPlayer.create(requireContext(), R.raw.d5)
+        binding.buttondis.setOnClickListener {
+            mp9.start()
         }
 
     }
