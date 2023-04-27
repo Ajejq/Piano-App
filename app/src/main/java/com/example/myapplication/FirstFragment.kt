@@ -71,7 +71,30 @@ class FirstFragment : Fragment() {
         binding.buttondis.setOnClickListener {
             mp9.start()
         }
-
+        val mp10 = MediaPlayer.create(requireContext(), R.raw.e5)
+        binding.buttoneis.setOnClickListener {
+            mp10.start()
+        }
+        val mp11 = MediaPlayer.create(requireContext(), R.raw.f5)
+        binding.buttonfis.setOnClickListener {
+            mp11.start()
+        }
+        val mp12 = MediaPlayer.create(requireContext(), R.raw.g5)
+        binding.buttongis.setOnClickListener {
+            mp12.start()
+        }
+        val mp13 = MediaPlayer.create(requireContext(), R.raw.a5)
+        binding.buttonhis.setOnClickListener {
+            mp13.start()
+        }
+        val mp14 = MediaPlayer.create(requireContext(), R.raw.b5)
+        binding.buttonais.setOnClickListener {
+            mp14.start()
+        }
+        val mp15 = MediaPlayer.create(requireContext(), R.raw.c5)
+        binding.buttonhis.setOnClickListener {
+            mp15.start()
+        }
     }
 
     override fun onDestroyView() {
