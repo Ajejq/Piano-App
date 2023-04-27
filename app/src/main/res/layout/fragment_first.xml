@@ -26,7 +26,9 @@
         android:id="@+id/buttoncis"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="cis" />
+        android:text="cis"
+        android:backgroundTint="#000000"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/button_re"
@@ -42,7 +44,9 @@
         android:id="@+id/buttondis"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="dis" />
+        android:text="dis"
+        android:backgroundTint="#000000"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/button_mi"
@@ -58,7 +62,9 @@
         android:id="@+id/buttoneis"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="eis" />
+        android:text="eis"
+        android:backgroundTint="#000000"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/button_fa"
@@ -74,7 +80,9 @@
         android:id="@+id/buttonfis"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="fis" />
+        android:text="fis"
+        android:backgroundTint="#000000"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/button_sol"
@@ -90,7 +98,9 @@
         android:id="@+id/buttongis"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="gis" />
+        android:text="gis"
+        android:backgroundTint="#000000"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/button_la"
@@ -106,7 +116,9 @@
         android:id="@+id/buttonais"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="ais" />
+        android:text="ais"
+        android:backgroundTint="#000000"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/button_si"
@@ -122,7 +134,9 @@
         android:id="@+id/buttonhis"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="his" />
+        android:text="his"
+        android:backgroundTint="#000000"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/button_DO2"
