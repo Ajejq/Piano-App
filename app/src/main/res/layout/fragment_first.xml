@@ -28,7 +28,12 @@
         android:layout_height="48dp"
         android:text="cis"
         android:backgroundTint="#000000"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button_re"
@@ -46,7 +51,12 @@
         android:layout_height="48dp"
         android:text="dis"
         android:backgroundTint="#000000"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/button_mi"
@@ -64,7 +74,12 @@
         android:layout_height="48dp"
         android:text="eis"
         android:backgroundTint="#000000"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/button_fa"
@@ -82,7 +97,12 @@
         android:layout_height="48dp"
         android:text="fis"
         android:backgroundTint="#000000"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/button_sol"
@@ -92,7 +112,12 @@
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_sol"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/buttongis"
@@ -100,7 +125,12 @@
         android:layout_height="48dp"
         android:text="gis"
         android:backgroundTint="#000000"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/button_la"
@@ -118,7 +148,12 @@
         android:layout_height="48dp"
         android:text="ais"
         android:backgroundTint="#000000"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/button_si"
@@ -128,7 +163,12 @@
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_si"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/buttonhis"
@@ -136,7 +176,12 @@
         android:layout_height="48dp"
         android:text="his"
         android:backgroundTint="#000000"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/button_DO2"
