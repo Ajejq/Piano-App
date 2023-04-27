@@ -23,7 +23,7 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttoncis"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="cis" />
@@ -39,7 +39,7 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttondis"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="dis" />
@@ -55,7 +55,7 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttoneis"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="eis" />
@@ -71,7 +71,7 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonfis"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="fis" />
@@ -87,7 +87,7 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttongis"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="gis" />
@@ -103,7 +103,7 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/buttonais"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="ais" />
@@ -119,7 +119,7 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/buttonhis"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="his" />
