@@ -16,79 +16,122 @@
         android:id="@+id/button_do"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_do"
         android:textColor="@android:color/black" />
 
     <Button
+        android:id="@+id/button2"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="cis" />
+
+    <Button
         android:id="@+id/button_re"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
+        android:backgroundTint="#fff"
         android:text="@string/sound_re"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="dis" />
 
     <Button
         android:id="@+id/button_mi"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
+        android:backgroundTint="#fff"
         android:text="@string/sound_mi"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="eis" />
 
     <Button
         android:id="@+id/button_fa"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
+        android:backgroundTint="#fff"
         android:text="@string/sound_fa"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="fis" />
 
     <Button
         android:id="@+id/button_sol"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
+        android:backgroundTint="#fff"
         android:text="@string/sound_sol"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="gis" />
 
     <Button
         android:id="@+id/button_la"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
+        android:backgroundTint="#fff"
         android:text="@string/sound_la"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="ais" />
 
     <Button
         android:id="@+id/button_si"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
+        android:backgroundTint="#fff"
         android:text="@string/sound_si"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="his" />
 
     <Button
         android:id="@+id/button_DO2"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="#fff"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
+        android:backgroundTint="#fff"
         android:text="@string/sound_do2"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
+
 </LinearLayout>
