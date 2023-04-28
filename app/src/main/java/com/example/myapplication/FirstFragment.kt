@@ -32,69 +32,37 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val mp = MediaPlayer.create(requireContext(), R.raw.note_c)
-        binding.buttonDo.setOnClickListener {
-            mp.start()
-        }
+        binding.buttonDo.setOnClickListener { mp.start() }
         val mp1 = MediaPlayer.create(requireContext(), R.raw.note_d)
-        binding.buttonRe.setOnClickListener {
-            mp1.start()
-        }
+        binding.buttonRe.setOnClickListener { mp1.start() }
         val mp2 = MediaPlayer.create(requireContext(), R.raw.note_e)
-        binding.buttonMi.setOnClickListener {
-            mp2.start()
-        }
+        binding.buttonMi.setOnClickListener { mp2.start() }
         val mp3 = MediaPlayer.create(requireContext(), R.raw.note_f)
-        binding.buttonFa.setOnClickListener {
-            mp3.start()
-        }
+        binding.buttonFa.setOnClickListener { mp3.start() }
         val mp4 = MediaPlayer.create(requireContext(), R.raw.note_g)
-        binding.buttonSol.setOnClickListener {
-            mp4.start()
-        }
+        binding.buttonSol.setOnClickListener { mp4.start() }
         val mp5 = MediaPlayer.create(requireContext(), R.raw.note_a)
-        binding.buttonLa.setOnClickListener {
-            mp5.start()
-        }
+        binding.buttonLa.setOnClickListener { mp5.start() }
         val mp6 = MediaPlayer.create(requireContext(), R.raw.note_h)
-        binding.buttonSi.setOnClickListener {
-            mp6.start()
-        }
+        binding.buttonSi.setOnClickListener { mp6.start() }
         val mp7 = MediaPlayer.create(requireContext(), R.raw.note_c2)
-        binding.buttonDO2.setOnClickListener {
-            mp7.start()
-        }
+        binding.buttonDO2.setOnClickListener { mp7.start() }
         val mp8 = MediaPlayer.create(requireContext(), R.raw.c5)
-        binding.buttoncis.setOnClickListener {
-            mp8.start()
-        }
+        binding.buttoncis.setOnClickListener { mp8.start() }
         val mp9 = MediaPlayer.create(requireContext(), R.raw.d5)
-        binding.buttondis.setOnClickListener {
-            mp9.start()
-        }
+        binding.buttondis.setOnClickListener { mp9.start() }
         val mp10 = MediaPlayer.create(requireContext(), R.raw.e5)
-        binding.buttoneis.setOnClickListener {
-            mp10.start()
-        }
+        binding.buttoneis.setOnClickListener { mp10.start() }
         val mp11 = MediaPlayer.create(requireContext(), R.raw.f5)
-        binding.buttonfis.setOnClickListener {
-            mp11.start()
-        }
+        binding.buttonfis.setOnClickListener { mp11.start() }
         val mp12 = MediaPlayer.create(requireContext(), R.raw.g5)
-        binding.buttongis.setOnClickListener {
-            mp12.start()
-        }
+        binding.buttongis.setOnClickListener { mp12.start() }
         val mp13 = MediaPlayer.create(requireContext(), R.raw.a5)
-        binding.buttonhis.setOnClickListener {
-            mp13.start()
-        }
+        binding.buttonhis.setOnClickListener { mp13.start() }
         val mp14 = MediaPlayer.create(requireContext(), R.raw.b5)
-        binding.buttonais.setOnClickListener {
-            mp14.start()
-        }
+        binding.buttonais.setOnClickListener { mp14.start() }
         val mp15 = MediaPlayer.create(requireContext(), R.raw.c5)
-        binding.buttonhis.setOnClickListener {
-            mp15.start()
-        }
+        binding.buttonhis.setOnClickListener { mp15.start() }
     }
 
     override fun onDestroyView() {

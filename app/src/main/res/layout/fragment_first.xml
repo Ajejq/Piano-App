@@ -18,12 +18,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="3dp"
         android:layout_weight="1"
-        android:backgroundTint="#fff"
+        android:backgroundTint="@color/white"
         android:text="@string/sound_do"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
@@ -32,11 +32,11 @@
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="cis"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/black"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 
@@ -46,12 +46,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="3dp"
         android:layout_weight="1"
-        android:backgroundTint="#fff"
+        android:backgroundTint="@color/white"
         android:text="@string/sound_re"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
@@ -60,11 +60,11 @@
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="dis"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/black"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp"/>
 
@@ -74,12 +74,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="3dp"
         android:layout_weight="1"
-        android:backgroundTint="#fff"
+        android:backgroundTint="@color/white"
         android:text="@string/sound_mi"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
@@ -88,11 +88,11 @@
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="eis"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/black"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp"/>
 
@@ -102,12 +102,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="3dp"
         android:layout_weight="1"
-        android:backgroundTint="#fff"
+        android:backgroundTint="@color/white"
         android:text="@string/sound_fa"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
@@ -116,11 +116,11 @@
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="fis"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/black"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp"/>
 
@@ -130,12 +130,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="3dp"
         android:layout_weight="1"
-        android:backgroundTint="#fff"
+        android:backgroundTint="@color/white"
         android:text="@string/sound_sol"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
@@ -144,11 +144,11 @@
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="gis"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/black"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp"/>
 
@@ -158,12 +158,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="3dp"
         android:layout_weight="1"
-        android:backgroundTint="#fff"
+        android:backgroundTint="@color/white"
         android:text="@string/sound_la"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
@@ -172,11 +172,11 @@
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="ais"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/black"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp"/>
 
@@ -186,12 +186,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="3dp"
         android:layout_weight="1"
-        android:backgroundTint="#fff"
+        android:backgroundTint="@color/white"
         android:text="@string/sound_si"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
@@ -200,11 +200,11 @@
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="his"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/black"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp"/>
 
@@ -214,12 +214,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="3dp"
         android:layout_weight="1"
-        android:backgroundTint="#fff"
+        android:backgroundTint="@color/white"
         android:text="@string/sound_do2"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
-        app:rippleColor="#33AAAAAA"
+        app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp" />
 
