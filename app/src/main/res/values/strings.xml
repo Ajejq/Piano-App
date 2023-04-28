@@ -12,4 +12,19 @@
     <string name="sound_la">A</string>
     <string name="sound_si">H</string>
     <string name="sound_do2">C</string>
+    <string name="sound_cis">CIS</string>
+    <string name="sound_dis">DIS</string>
+    <string name="sound_eis">EIS</string>
+    <string name="sound_fis">FIS</string>
+    <string name="sound_gis">GIS</string>
+    <string name="sound_his">HIS</string>
+    <string name="sound_cis2">CIS2</string>
+
+
+
+
+
+
+
+
 </resources>
