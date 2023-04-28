@@ -20,7 +20,12 @@
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_do"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/buttoncis"
@@ -43,7 +48,12 @@
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_re"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/buttondis"
@@ -66,7 +76,12 @@
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_mi"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/buttoneis"
@@ -89,7 +104,12 @@
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_fa"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/buttonfis"
@@ -116,7 +136,7 @@
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="#33AAAAAA"
-        app:strokeColor="@color/white"
+        app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
     <Button
@@ -140,7 +160,12 @@
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_la"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/buttonais"
@@ -167,7 +192,7 @@
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="#33AAAAAA"
-        app:strokeColor="@color/white"
+        app:strokeColor="@color/black"
         app:strokeWidth="2dp"/>
 
     <Button
@@ -191,6 +216,11 @@
         android:layout_weight="1"
         android:backgroundTint="#fff"
         android:text="@string/sound_do2"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
 
 </LinearLayout>
