@@ -28,17 +28,18 @@
 
     <Button
         android:id="@+id/buttoncis"
+        android:layout_gravity="right"
+        android:gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="@string/sound_cis"
         android:backgroundTint="@color/black"
+        android:text="@string/sound_cis"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp"
-        />
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button_re"
@@ -56,6 +57,8 @@
 
     <Button
         android:id="@+id/buttondis"
+        android:layout_gravity="right"
+        android:gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="@string/sound_dis"
@@ -83,6 +86,8 @@
 
     <Button
         android:id="@+id/buttoneis"
+        android:layout_gravity="right"
+        android:gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="@string/sound_eis"
@@ -110,6 +115,8 @@
 
     <Button
         android:id="@+id/buttonfis"
+        android:layout_gravity="right"
+        android:gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="@string/sound_fis"
@@ -137,6 +144,8 @@
 
     <Button
         android:id="@+id/buttongis"
+        android:layout_gravity="right"
+        android:gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="@string/sound_gis"
@@ -164,6 +173,8 @@
 
     <Button
         android:id="@+id/buttonais"
+        android:layout_gravity="right"
+        android:gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="@string/sound_his"
@@ -191,6 +202,8 @@
 
     <Button
         android:id="@+id/buttonhis"
+        android:layout_gravity="right"
+        android:gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:text="@string/sound_cis2"
