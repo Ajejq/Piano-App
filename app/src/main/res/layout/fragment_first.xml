@@ -10,7 +10,9 @@
     <TextView
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TEXT TEST" />
 
     <Button
         android:id="@+id/button_do"
@@ -24,13 +26,13 @@
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/buttoncis"
-        android:layout_gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
+        android:layout_gravity="end"
         android:backgroundTint="@color/black"
         android:text="@string/sound_cis"
         android:textColor="@android:color/white"
@@ -52,21 +54,21 @@
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/buttondis"
-        android:layout_gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="@string/sound_dis"
+        android:layout_gravity="end"
         android:backgroundTint="@color/black"
+        android:text="@string/sound_dis"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button_mi"
@@ -80,21 +82,21 @@
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/buttoneis"
-        android:layout_gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="@string/sound_eis"
+        android:layout_gravity="end"
         android:backgroundTint="@color/black"
+        android:text="@string/sound_eis"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button_fa"
@@ -108,21 +110,21 @@
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/buttonfis"
-        android:layout_gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="@string/sound_fis"
+        android:layout_gravity="end"
         android:backgroundTint="@color/black"
+        android:text="@string/sound_fis"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button_sol"
@@ -136,21 +138,21 @@
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/buttongis"
-        android:layout_gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="@string/sound_gis"
+        android:layout_gravity="end"
         android:backgroundTint="@color/black"
+        android:text="@string/sound_gis"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button_la"
@@ -164,21 +166,21 @@
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/buttonais"
-        android:layout_gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="@string/sound_his"
+        android:layout_gravity="end"
         android:backgroundTint="@color/black"
+        android:text="@string/sound_his"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button_si"
@@ -192,21 +194,21 @@
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/buttonhis"
-        android:layout_gravity="right"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:text="@string/sound_cis2"
+        android:layout_gravity="end"
         android:backgroundTint="@color/black"
+        android:text="@string/sound_cis2"
         android:textColor="@android:color/white"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button_DO2"
