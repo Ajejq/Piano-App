@@ -129,19 +129,75 @@ class FirstFragment() : Fragment(), Parcelable {
         }
         }
         val mp9 = MediaPlayer.create(requireContext(), R.raw.d5)
-        binding.buttondis.setOnClickListener { mp9.start() }
+        binding.buttondis.setOnClickListener {
+            if(mp9.isPlaying) {
+            mp9.stop()
+            mp9.prepare()
+            mp9.start()
+        } else {
+            mp9.start()
+        }
+        }
         val mp10 = MediaPlayer.create(requireContext(), R.raw.e5)
-        binding.buttoneis.setOnClickListener { mp10.start() }
+        binding.buttoneis.setOnClickListener {
+            if(mp10.isPlaying) {
+            mp10.stop()
+            mp10.prepare()
+            mp10.start()
+        } else {
+            mp10.start()
+        }
+        }
         val mp11 = MediaPlayer.create(requireContext(), R.raw.f5)
-        binding.buttonfis.setOnClickListener { mp11.start() }
+        binding.buttonfis.setOnClickListener {
+            if(mp11.isPlaying) {
+            mp11.stop()
+            mp11.prepare()
+            mp11.start()
+        } else {
+            mp11.start()
+        }
+        }
         val mp12 = MediaPlayer.create(requireContext(), R.raw.g5)
-        binding.buttongis.setOnClickListener { mp12.start() }
+        binding.buttongis.setOnClickListener {
+            if(mp12.isPlaying) {
+            mp12.stop()
+            mp12.prepare()
+            mp12.start()
+        } else {
+            mp12.start()
+        }
+        }
         val mp13 = MediaPlayer.create(requireContext(), R.raw.a5)
-        binding.buttonhis.setOnClickListener { mp13.start() }
+        binding.buttonhis.setOnClickListener {
+            if(mp13.isPlaying) {
+            mp13.stop()
+            mp13.prepare()
+            mp13.start()
+        } else {
+            mp13.start()
+        }
+        }
         val mp14 = MediaPlayer.create(requireContext(), R.raw.b5)
-        binding.buttonais.setOnClickListener { mp14.start() }
+        binding.buttonais.setOnClickListener {
+            if(mp14.isPlaying) {
+            mp14.stop()
+            mp14.prepare()
+            mp14.start()
+        } else {
+            mp14.start()
+        }
+        }
         val mp15 = MediaPlayer.create(requireContext(), R.raw.c5)
-        binding.buttonhis.setOnClickListener { mp15.start() }
+        binding.buttonhis.setOnClickListener {
+            if(mp15.isPlaying) {
+            mp15.stop()
+            mp15.prepare()
+            mp15.start()
+        } else {
+            mp15.start()
+        }
+        }
     }
 
     override fun onDestroyView() {
