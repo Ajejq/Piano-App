@@ -38,14 +38,15 @@ class FirstFragment() : Fragment(), Parcelable {
 
 
         val mp = MediaPlayer.create(requireContext(), R.raw.note_c)
-        binding.buttonDo.setOnClickListener{
-            if { (mp.isPlaying)
+        binding.buttonDo.setOnClickListener {
+            if(mp.isPlaying) {
                 mp.stop()
                 mp.prepare()
-                mp.start() }
-                else { mp.start() }
+                mp.start()
+            } else {
+                mp.start()
             }
-
+        }
 
         val mp1 = MediaPlayer.create(requireContext(), R.raw.note_d)
         binding.buttonRe.setOnClickListener { mp1.start() }
