@@ -49,21 +49,85 @@ class FirstFragment() : Fragment(), Parcelable {
         }
 
         val mp1 = MediaPlayer.create(requireContext(), R.raw.note_d)
-        binding.buttonRe.setOnClickListener { mp1.start() }
+        binding.buttonRe.setOnClickListener {
+            if (mp1.isPlaying) {
+                mp1.stop()
+                mp1.prepare()
+                mp1.start()
+            } else {
+                mp1.start()
+            }
+        }
         val mp2 = MediaPlayer.create(requireContext(), R.raw.note_e)
-        binding.buttonMi.setOnClickListener { mp2.start() }
+        binding.buttonMi.setOnClickListener {
+            if(mp2.isPlaying) {
+            mp2.stop()
+            mp2.prepare()
+            mp2.start()
+        } else {
+            mp2.start()
+        }
+        }
         val mp3 = MediaPlayer.create(requireContext(), R.raw.note_f)
-        binding.buttonFa.setOnClickListener { mp3.start() }
+        binding.buttonFa.setOnClickListener {
+            if(mp3.isPlaying) {
+            mp3.stop()
+            mp3.prepare()
+            mp3.start()
+        } else {
+            mp3.start()
+        }
+        }
         val mp4 = MediaPlayer.create(requireContext(), R.raw.note_g)
-        binding.buttonSol.setOnClickListener { mp4.start() }
+        binding.buttonSol.setOnClickListener {
+            if(mp4.isPlaying) {
+            mp4.stop()
+            mp4.prepare()
+            mp4.start()
+        } else {
+            mp4.start()
+        }
+        }
         val mp5 = MediaPlayer.create(requireContext(), R.raw.note_a)
-        binding.buttonLa.setOnClickListener { mp5.start() }
+        binding.buttonLa.setOnClickListener {
+            if(mp5.isPlaying) {
+            mp5.stop()
+            mp5.prepare()
+            mp5.start()
+        } else {
+            mp5.start()
+        }
+        }
         val mp6 = MediaPlayer.create(requireContext(), R.raw.note_h)
-        binding.buttonSi.setOnClickListener { mp6.start() }
+        binding.buttonSi.setOnClickListener {
+        if(mp6.isPlaying) {
+            mp6.stop()
+            mp6.prepare()
+            mp6.start()
+        } else {
+            mp6.start()
+        }
+        }
         val mp7 = MediaPlayer.create(requireContext(), R.raw.note_c2)
-        binding.buttonDO2.setOnClickListener { mp7.start() }
+        binding.buttonDO2.setOnClickListener {
+            if(mp7.isPlaying) {
+            mp7.stop()
+            mp7.prepare()
+            mp7.start()
+        } else {
+            mp7.start()
+        }
+        }
         val mp8 = MediaPlayer.create(requireContext(), R.raw.c5)
-        binding.buttoncis.setOnClickListener { mp8.start() }
+        binding.buttoncis.setOnClickListener {
+            if(mp8.isPlaying) {
+            mp8.stop()
+            mp8.prepare()
+            mp8.start()
+        } else {
+            mp8.start()
+        }
+        }
         val mp9 = MediaPlayer.create(requireContext(), R.raw.d5)
         binding.buttondis.setOnClickListener { mp9.start() }
         val mp10 = MediaPlayer.create(requireContext(), R.raw.e5)
