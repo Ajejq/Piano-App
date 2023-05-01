@@ -12,10 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="TEXT TEST" />
+        android:text="Piano App" />
 
     <Button
         android:id="@+id/button_do"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -30,6 +32,8 @@
 
     <Button
         android:id="@+id/buttoncis"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:layout_gravity="end"
@@ -45,6 +49,8 @@
     <Button
         android:id="@+id/button_re"
         android:layout_width="match_parent"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:backgroundTint="@color/white"
@@ -58,6 +64,8 @@
 
     <Button
         android:id="@+id/buttondis"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_width="280dp"
         android:layout_height="48dp"
         android:layout_gravity="end"
@@ -73,6 +81,8 @@
     <Button
         android:id="@+id/button_mi"
         android:layout_width="match_parent"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:backgroundTint="@color/white"
@@ -87,6 +97,8 @@
     <Button
         android:id="@+id/buttoneis"
         android:layout_width="280dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="48dp"
         android:layout_gravity="end"
         android:backgroundTint="@color/black"
@@ -101,6 +113,8 @@
     <Button
         android:id="@+id/button_fa"
         android:layout_width="match_parent"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:backgroundTint="@color/white"
@@ -115,6 +129,8 @@
     <Button
         android:id="@+id/buttonfis"
         android:layout_width="280dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="48dp"
         android:layout_gravity="end"
         android:backgroundTint="@color/black"
@@ -129,6 +145,8 @@
     <Button
         android:id="@+id/button_sol"
         android:layout_width="match_parent"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:backgroundTint="@color/white"
@@ -143,6 +161,8 @@
     <Button
         android:id="@+id/buttongis"
         android:layout_width="280dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="48dp"
         android:layout_gravity="end"
         android:backgroundTint="@color/black"
@@ -157,6 +177,8 @@
     <Button
         android:id="@+id/button_la"
         android:layout_width="match_parent"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:backgroundTint="@color/white"
@@ -171,6 +193,8 @@
     <Button
         android:id="@+id/buttonais"
         android:layout_width="280dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="48dp"
         android:layout_gravity="end"
         android:backgroundTint="@color/black"
@@ -185,6 +209,8 @@
     <Button
         android:id="@+id/button_si"
         android:layout_width="match_parent"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:backgroundTint="@color/white"
@@ -199,6 +225,8 @@
     <Button
         android:id="@+id/buttonhis"
         android:layout_width="280dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="48dp"
         android:layout_gravity="end"
         android:backgroundTint="@color/black"
@@ -213,6 +241,8 @@
     <Button
         android:id="@+id/button_DO2"
         android:layout_width="match_parent"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:backgroundTint="@color/white"

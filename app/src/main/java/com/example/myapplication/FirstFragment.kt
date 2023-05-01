@@ -30,12 +30,9 @@ class FirstFragment() : Fragment(), Parcelable {
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
-
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
 
         val mp = MediaPlayer.create(requireContext(), R.raw.note_c)
         binding.buttonDo.setOnClickListener {
@@ -47,7 +44,6 @@ class FirstFragment() : Fragment(), Parcelable {
                 mp.start()
             }
         }
-
         val mp1 = MediaPlayer.create(requireContext(), R.raw.note_d)
         binding.buttonRe.setOnClickListener {
             if (mp1.isPlaying) {
