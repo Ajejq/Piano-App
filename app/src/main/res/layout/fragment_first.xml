@@ -14,244 +14,25 @@
         android:layout_gravity="center"
         android:text="Piano App" />
 
-    <Button
-        android:id="@+id/button_do"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/sound_do"
-        android:textColor="@android:color/black"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
+        android:layout_height="wrap_content" >
 
-    <Button
-        android:id="@+id/buttoncis"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:text="@string/sound_cis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
 
-    <Button
-        android:id="@+id/button_re"
-        android:layout_width="match_parent"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/sound_re"
-        android:textColor="@android:color/black"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
+        <include
+            android:id="@+id/white_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/white_buttons"/>
 
-    <Button
-        android:id="@+id/buttondis"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:text="@string/sound_dis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
 
-    <Button
-        android:id="@+id/button_mi"
-        android:layout_width="match_parent"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/sound_mi"
-        android:textColor="@android:color/black"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
+        <include
+            android:id="@+id/black_buttons"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/black_buttons"/>
 
-    <Button
-        android:id="@+id/buttoneis"
-        android:layout_width="280dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="48dp"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:text="@string/sound_eis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/button_fa"
-        android:layout_width="match_parent"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/sound_fa"
-        android:textColor="@android:color/black"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/buttonfis"
-        android:layout_width="280dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="48dp"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:text="@string/sound_fis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/button_sol"
-        android:layout_width="match_parent"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/sound_sol"
-        android:textColor="@android:color/black"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/buttongis"
-        android:layout_width="280dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="48dp"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:text="@string/sound_gis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/button_la"
-        android:layout_width="match_parent"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/sound_la"
-        android:textColor="@android:color/black"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/buttonais"
-        android:layout_width="280dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="48dp"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:text="@string/sound_his"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/button_si"
-        android:layout_width="match_parent"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/sound_si"
-        android:textColor="@android:color/black"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/buttonhis"
-        android:layout_width="280dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="48dp"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:text="@string/sound_cis2"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/button_DO2"
-        android:layout_width="match_parent"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/sound_do2"
-        android:textColor="@android:color/black"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
+    </FrameLayout>
 
 </LinearLayout>
