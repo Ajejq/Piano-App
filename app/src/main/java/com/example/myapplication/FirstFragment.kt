@@ -115,7 +115,7 @@ class FirstFragment() : Fragment(), Parcelable {
                 mp7.start()
             }
         }
-        val mp8 = MediaPlayer.create(requireContext(), R.raw.c5)
+        val mp8 = MediaPlayer.create(requireContext(), R.raw.cis)
         binding.blackButtons.buttoncis.setOnClickListener {
             if (mp8.isPlaying) {
                 mp8.stop()
@@ -125,7 +125,7 @@ class FirstFragment() : Fragment(), Parcelable {
                 mp8.start()
             }
         }
-        val mp9 = MediaPlayer.create(requireContext(), R.raw.d5)
+        val mp9 = MediaPlayer.create(requireContext(), R.raw.dis)
         binding.blackButtons.buttondis.setOnClickListener {
             if (mp9.isPlaying) {
                 mp9.stop()
@@ -135,7 +135,7 @@ class FirstFragment() : Fragment(), Parcelable {
                 mp9.start()
             }
         }
-        val mp10 = MediaPlayer.create(requireContext(), R.raw.e5)
+        val mp10 = MediaPlayer.create(requireContext(), R.raw.fis)
         binding.blackButtons.buttonfis.setOnClickListener {
             if (mp10.isPlaying) {
                 mp10.stop()
@@ -145,7 +145,7 @@ class FirstFragment() : Fragment(), Parcelable {
                 mp10.start()
             }
         }
-        val mp11 = MediaPlayer.create(requireContext(), R.raw.f5)
+        val mp11 = MediaPlayer.create(requireContext(), R.raw.gis)
         binding.blackButtons.buttongis.setOnClickListener {
             if (mp11.isPlaying) {
                 mp11.stop()
@@ -155,7 +155,7 @@ class FirstFragment() : Fragment(), Parcelable {
                 mp11.start()
             }
         }
-        val mp12 = MediaPlayer.create(requireContext(), R.raw.g5)
+        val mp12 = MediaPlayer.create(requireContext(), R.raw.ais)
         binding.blackButtons.buttonais.setOnClickListener {
             if (mp12.isPlaying) {
                 mp12.stop()
