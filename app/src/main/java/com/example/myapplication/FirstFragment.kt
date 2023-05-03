@@ -1,11 +1,13 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import com.example.myapplication.databinding.FragmentFirstBinding
@@ -26,35 +28,43 @@ class FirstFragment() : Fragment(), Parcelable {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val mp = MediaPlayer.create(requireContext(), R.raw.note_c)
-        binding.whiteButtons.buttonC.setOnClickListener {
-            if (mp.isPlaying) {
-                mp.stop()
-                mp.prepare()
-                mp.start()
-            } else {
-                mp.start()
+        binding.whiteButtons.buttonC.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp.isPlaying) {
+                    mp.stop()
+                    mp.prepare()
+                    mp.start()
+                } else {
+                    mp.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp1 = MediaPlayer.create(requireContext(), R.raw.note_d)
-        binding.whiteButtons.buttonD.setOnClickListener {
-            if (mp1.isPlaying) {
-                mp1.stop()
-                mp1.prepare()
-                mp1.start()
-            } else {
-                mp1.start()
+        binding.whiteButtons.buttonD.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp1.isPlaying) {
+                    mp1.stop()
+                    mp1.prepare()
+                    mp1.start()
+                } else {
+                    mp1.start()
+                }
             }
+            return@setOnTouchListener true;
         }
+
         val mp2 = MediaPlayer.create(requireContext(), R.raw.note_e)
         binding.whiteButtons.buttonE.setOnClickListener {
             if (mp2.isPlaying) {
