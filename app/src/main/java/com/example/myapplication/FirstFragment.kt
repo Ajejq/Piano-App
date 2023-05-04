@@ -231,4 +231,8 @@ class FirstFragment() : Fragment(), Parcelable {
             return arrayOfNulls(size)
         }
     }
+//    private fun rotateTxt(text: String): String {
+//
+//
+//    }
 }

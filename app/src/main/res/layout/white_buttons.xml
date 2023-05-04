@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
         android:id="@+id/button_c"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:text="@string/sound_c"
         android:textColor="@android:color/black"
+        android:textAlignment="textStart"
+        android:paddingStart="70dp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
+        app:strokeWidth="2dp"
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/button_d"
@@ -31,6 +35,8 @@
         android:backgroundTint="@color/white"
         android:text="@string/sound_d"
         android:textColor="@android:color/black"
+        android:textAlignment="textStart"
+        android:paddingStart="70dp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
@@ -47,6 +53,8 @@
         android:backgroundTint="@color/white"
         android:text="@string/sound_e"
         android:textColor="@android:color/black"
+        android:textAlignment="textStart"
+        android:paddingStart="70dp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
@@ -64,6 +72,8 @@
         android:text="@string/sound_f"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:paddingStart="70dp"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
@@ -79,6 +89,8 @@
         android:insetBottom="0dp"
         android:text="@string/sound_g"
         android:textColor="@android:color/black"
+        android:textAlignment="textStart"
+        android:paddingStart="70dp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
@@ -95,6 +107,8 @@
         android:backgroundTint="@color/white"
         android:text="@string/sound_a"
         android:textColor="@android:color/black"
+        android:textAlignment="textStart"
+        android:paddingStart="70dp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
@@ -110,7 +124,9 @@
         android:layout_weight="1"
         android:backgroundTint="@color/white"
         android:text="@string/sound_h"
+        android:textAlignment="textStart"
         android:textColor="@android:color/black"
+        android:paddingStart="70dp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
@@ -124,15 +140,16 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:textAlignment="textStart"
         android:backgroundTint="@color/white"
         android:text="@string/sound_c2"
         android:textColor="@android:color/black"
+        android:paddingStart="70dp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="8dp"
         app:rippleColor="@color/white"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp" />
-
 
 
 </LinearLayout>
