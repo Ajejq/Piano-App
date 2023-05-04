@@ -66,64 +66,82 @@ class FirstFragment() : Fragment(), Parcelable {
         }
 
         val mp2 = MediaPlayer.create(requireContext(), R.raw.note_e)
-        binding.whiteButtons.buttonE.setOnClickListener {
-            if (mp2.isPlaying) {
-                mp2.stop()
-                mp2.prepare()
-                mp2.start()
-            } else {
-                mp2.start()
+        binding.whiteButtons.buttonE.setOnTouchListener() { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp2.isPlaying) {
+                    mp2.stop()
+                    mp2.prepare()
+                    mp2.start()
+                } else {
+                    mp2.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp3 = MediaPlayer.create(requireContext(), R.raw.note_f)
-        binding.whiteButtons.buttonF.setOnClickListener {
-            if (mp3.isPlaying) {
-                mp3.stop()
-                mp3.prepare()
-                mp3.start()
-            } else {
-                mp3.start()
+        binding.whiteButtons.buttonF.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp3.isPlaying) {
+                    mp3.stop()
+                    mp3.prepare()
+                    mp3.start()
+                } else {
+                    mp3.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp4 = MediaPlayer.create(requireContext(), R.raw.note_g)
-        binding.whiteButtons.buttonG.setOnClickListener {
-            if (mp4.isPlaying) {
-                mp4.stop()
-                mp4.prepare()
-                mp4.start()
-            } else {
-                mp4.start()
+        binding.whiteButtons.buttonG.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp4.isPlaying) {
+                    mp4.stop()
+                    mp4.prepare()
+                    mp4.start()
+                } else {
+                    mp4.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp5 = MediaPlayer.create(requireContext(), R.raw.note_a)
-        binding.whiteButtons.buttonA.setOnClickListener {
-            if (mp5.isPlaying) {
-                mp5.stop()
-                mp5.prepare()
-                mp5.start()
-            } else {
-                mp5.start()
+        binding.whiteButtons.buttonA.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp5.isPlaying) {
+                    mp5.stop()
+                    mp5.prepare()
+                    mp5.start()
+                } else {
+                    mp5.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp6 = MediaPlayer.create(requireContext(), R.raw.note_h)
-        binding.whiteButtons.buttonH.setOnClickListener {
-            if (mp6.isPlaying) {
-                mp6.stop()
-                mp6.prepare()
-                mp6.start()
-            } else {
-                mp6.start()
+        binding.whiteButtons.buttonH.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp6.isPlaying) {
+                    mp6.stop()
+                    mp6.prepare()
+                    mp6.start()
+                } else {
+                    mp6.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp7 = MediaPlayer.create(requireContext(), R.raw.note_c2)
-        binding.whiteButtons.buttonC2.setOnClickListener {
-            if (mp7.isPlaying) {
-                mp7.stop()
-                mp7.prepare()
-                mp7.start()
-            } else {
-                mp7.start()
+        binding.whiteButtons.buttonC2.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp7.isPlaying) {
+                    mp7.stop()
+                    mp7.prepare()
+                    mp7.start()
+                } else {
+                    mp7.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp8 = MediaPlayer.create(requireContext(), R.raw.cis)
         binding.blackButtons.buttoncis.setOnClickListener {
