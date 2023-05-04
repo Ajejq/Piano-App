@@ -144,54 +144,69 @@ class FirstFragment() : Fragment(), Parcelable {
             return@setOnTouchListener true;
         }
         val mp8 = MediaPlayer.create(requireContext(), R.raw.cis)
-        binding.blackButtons.buttoncis.setOnClickListener {
-            if (mp8.isPlaying) {
-                mp8.stop()
-                mp8.prepare()
-                mp8.start()
-            } else {
-                mp8.start()
+        binding.blackButtons.buttoncis.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp8.isPlaying) {
+                    mp8.stop()
+                    mp8.prepare()
+                    mp8.start()
+                } else {
+                    mp8.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp9 = MediaPlayer.create(requireContext(), R.raw.dis)
-        binding.blackButtons.buttondis.setOnClickListener {
-            if (mp9.isPlaying) {
-                mp9.stop()
-                mp9.prepare()
-                mp9.start()
-            } else {
-                mp9.start()
+        binding.blackButtons.buttondis.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp9.isPlaying) {
+                    mp9.stop()
+                    mp9.prepare()
+                    mp9.start()
+                } else {
+                    mp9.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp10 = MediaPlayer.create(requireContext(), R.raw.fis)
-        binding.blackButtons.buttonfis.setOnClickListener {
-            if (mp10.isPlaying) {
-                mp10.stop()
-                mp10.prepare()
-                mp10.start()
-            } else {
-                mp10.start()
+        binding.blackButtons.buttonfis.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp10.isPlaying) {
+                    mp10.stop()
+                    mp10.prepare()
+                    mp10.start()
+                } else {
+                    mp10.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp11 = MediaPlayer.create(requireContext(), R.raw.gis)
-        binding.blackButtons.buttongis.setOnClickListener {
-            if (mp11.isPlaying) {
-                mp11.stop()
-                mp11.prepare()
-                mp11.start()
-            } else {
-                mp11.start()
+        binding.blackButtons.buttongis.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp11.isPlaying) {
+                    mp11.stop()
+                    mp11.prepare()
+                    mp11.start()
+                } else {
+                    mp11.start()
+                }
             }
+            return@setOnTouchListener true;
         }
         val mp12 = MediaPlayer.create(requireContext(), R.raw.ais)
-        binding.blackButtons.buttonais.setOnClickListener {
-            if (mp12.isPlaying) {
-                mp12.stop()
-                mp12.prepare()
-                mp12.start()
-            } else {
-                mp12.start()
+        binding.blackButtons.buttonais.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                if (mp12.isPlaying) {
+                    mp12.stop()
+                    mp12.prepare()
+                    mp12.start()
+                } else {
+                    mp12.start()
+                }
             }
+            return@setOnTouchListener true;
         }
     }
 
