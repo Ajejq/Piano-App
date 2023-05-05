@@ -7,10 +7,10 @@
     tools:context=".FirstFragment">
 
     <FrameLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="UselessParent">
-
 
         <include
             android:id="@+id/white_buttons"
@@ -18,12 +18,17 @@
             android:layout_height="match_parent"
             layout="@layout/white_buttons"/>
 
-
         <include
             android:id="@+id/black_buttons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             layout="@layout/black_buttons"/>
+
+<!--        <include-->
+<!--            android:id="@+id/white_click"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            layout="@layout/white_click" />-->
 
     </FrameLayout>
 
