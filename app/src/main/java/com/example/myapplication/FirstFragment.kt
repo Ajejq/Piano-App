@@ -38,7 +38,7 @@ class FirstFragment() : Fragment(), Parcelable {
 
     @SuppressLint("ClickableViewAccessibility")
     private fun makeOnTouchListener(mp: MediaPlayer): OnTouchListener {
-        val onTouchListener = OnTouchListener { v, motionEvent ->
+        val onTouchListener = OnTouchListener { _, motionEvent ->
              when (motionEvent.action) {
                 MotionEvent.ACTION_DOWN -> {
                     if (mp.isPlaying) {

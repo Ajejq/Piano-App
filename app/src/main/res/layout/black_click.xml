@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <Button
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/button"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_width="280dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/button"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_gravity="end"
+    android:backgroundTint="@color/black"
+    android:background="@drawable/costumborder"
+    app:rippleColor="@color/grey"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
         android:text="@string/sound_cis"
+        android:textSize="20sp"
         android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
+        />
+
+</LinearLayout>
+
+<!--    <Button-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/button"-->
+<!--        android:insetTop="0dp"-->
+<!--        android:insetBottom="0dp"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:text="@string/sound_cis"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        app:backgroundTint="@android:color/transparent"-->
+<!--        app:cornerRadius="8dp"-->
+<!--        app:rippleColor="@color/white"-->
+<!--        app:strokeColor="@color/white"-->
+<!--        app:strokeWidth="2dp" />-->

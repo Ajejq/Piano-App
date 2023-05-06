@@ -20,9 +20,9 @@
 
         <include
             android:id="@+id/black_buttons"
+            layout="@layout/black_buttons"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            layout="@layout/black_buttons"/>
+            android:layout_height="match_parent" />
 
     </FrameLayout>
 
