@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/buttoncis"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/button"
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:layout_width="280dp"
@@ -21,5 +18,3 @@
         app:rippleColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
-
-</LinearLayout>

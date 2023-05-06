@@ -9,51 +9,20 @@
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
-
-    <Button
-        android:id="@+id/buttoncis"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:layout_width="280dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:text="@string/sound_cis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
+    <include
+        android:id="@+id/button_cis"
+        layout="@layout/black_click" />
     <View
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
-
-    <Button
-        android:id="@+id/buttondis"
-        android:layout_width="280dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="@string/sound_dis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
+    <include
+        android:id="@+id/button_dis"
+        layout="@layout/black_click" />
     <View
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
-
     <View
         android:layout_width="20dp"
         android:layout_height="0dp"
@@ -62,84 +31,33 @@
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="0.5" />
-
-    <Button
-        android:id="@+id/buttonfis"
-        android:layout_width="280dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="@string/sound_fis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
+    <include
+        android:id="@+id/button_fis"
+        layout="@layout/black_click" />
     <View
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
-
-
-    <Button
-        android:id="@+id/buttongis"
-        android:layout_width="280dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="@string/sound_gis"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
+    <include
+        android:id="@+id/button_gis"
+        layout="@layout/black_click" />
     <View
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
-
-    <Button
-        android:id="@+id/buttonais"
-        android:layout_width="280dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/black"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="@string/sound_ais"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@android:color/transparent"
-        app:cornerRadius="8dp"
-        app:rippleColor="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
-
+    <include
+        android:id="@+id/button_ais"
+        layout="@layout/black_click" />
     <View
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
-
     <View
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
-
     <View
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:layout_weight="0.8" />
-
-
-
 </LinearLayout>
