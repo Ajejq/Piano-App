@@ -16,8 +16,9 @@
     android:paddingStart="70dp"
     app:backgroundTint="@android:color/transparent"
     app:cornerRadius="8dp"
-    app:rippleColor="@color/white"
+    app:rippleColor="@color/grey"
     app:strokeColor="@color/black"
     app:strokeWidth="2dp"
     tools:ignore="RtlSymmetry"
+    tools:text="C"
     />
