@@ -9,14 +9,18 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:layout_weight="1"
-    tools:layout_height="200dp">
+    tools:layout_height="200dp"
+    android:background="@drawable/costumborder"
+    app:rippleColor="@color/grey">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rotation="90"
         android:text="@string/sound_c"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        />
 
 </LinearLayout>
 
