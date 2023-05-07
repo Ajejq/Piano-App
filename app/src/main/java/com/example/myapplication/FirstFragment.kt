@@ -1,17 +1,16 @@
 package com.example.myapplication
 
 import android.annotation.SuppressLint
-import android.graphics.PorterDuff
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
 import android.view.View.OnTouchListener
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.myapplication.databinding.FragmentFirstBinding
 
 /**
@@ -48,13 +47,9 @@ class FirstFragment() : Fragment(), Parcelable {
                     } else {
                         mp.start()
                     }
-//                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-//                    v.invalidate()
+
                 }
-//                MotionEvent.ACTION_UP -> {
-//                    v.background.clearColorFilter()
-//                    v.invalidate()
-//                }
+
             }
             return@OnTouchListener false
         }
@@ -133,3 +128,10 @@ class FirstFragment() : Fragment(), Parcelable {
 //
 //    }
 }
+
+//                MotionEvent.ACTION_UP -> {
+//                    v.background.clearColorFilter()
+//                    v.invalidate()
+//                }
+//                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
+//                    v.invalidate()
