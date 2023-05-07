@@ -20,33 +20,7 @@
         android:text="@string/sound_c"
         android:textSize="20sp"
         android:textColor="@android:color/black"
+
         />
 
 </LinearLayout>
-
-<!--<Button-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:id="@+id/button"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="0dp"-->
-<!--    android:layout_weight="1"-->
-<!--    android:backgroundTint="@color/white"-->
-<!--    android:insetTop="0dp"-->
-<!--    android:insetBottom="0dp"-->
-<!--    android:text="@string/sound_c"-->
-<!--    android:textColor="@android:color/black"-->
-<!--    android:textAlignment="textStart"-->
-<!--    android:paddingStart="70dp"-->
-<!--    app:backgroundTint="@android:color/transparent"-->
-<!--    app:cornerRadius="8dp"-->
-<!--    app:rippleColor="@color/grey"-->
-<!--    app:strokeColor="@color/black"-->
-<!--    app:strokeWidth="2dp"-->
-<!--    tools:ignore="RtlSymmetry"-->
-<!--    tools:text="C"-->
-<!--    tools:layout_height="200dp"-->
-<!--    />-->
-
-

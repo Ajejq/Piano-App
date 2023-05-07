@@ -7,11 +7,12 @@
     android:layout_width="280dp"
     android:layout_height="50dp"
     android:gravity="center"
+    android:clickable="true"
     android:layout_gravity="end"
     android:backgroundTint="@color/black"
     android:background="@drawable/costumborder"
     app:rippleColor="@color/grey"
-    >
+    android:focusable="true">
 
 
     <TextView

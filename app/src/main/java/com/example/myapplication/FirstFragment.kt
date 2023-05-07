@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Parcel
@@ -38,9 +39,17 @@ class FirstFragment() : Fragment(), Parcelable {
 
     @SuppressLint("ClickableViewAccessibility")
     private fun makeOnTouchListener(mp: MediaPlayer): OnTouchListener {
-        val onTouchListener = OnTouchListener { _, motionEvent ->
+        val onTouchListener = OnTouchListener { v, motionEvent ->
              when (motionEvent.action) {
+                 MotionEvent.ACTION_UP -> {
+                     // We need to set background as drawable (costumborder.xml) here, not as colour.
+                     v.background.setTint(Color.WHITE);
+                     v.invalidate()
+                 }
                 MotionEvent.ACTION_DOWN -> {
+                    v.background.setTint(Color.BLACK);
+                    v.invalidate()
+
                     if (mp.isPlaying) {
                         mp.stop()
                         mp.prepare()
@@ -48,9 +57,7 @@ class FirstFragment() : Fragment(), Parcelable {
                     } else {
                         mp.start()
                     }
-
                 }
-
             }
             return@OnTouchListener true
         }
@@ -124,15 +131,4 @@ class FirstFragment() : Fragment(), Parcelable {
             return arrayOfNulls(size)
         }
     }
-//    private fun rotateTxt(text: String): String {
-//
-//
-//    }
 }
-
-//                MotionEvent.ACTION_UP -> {
-//                    v.background.clearColorFilter()
-//                    v.invalidate()
-//                }
-//                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-//                    v.invalidate()
