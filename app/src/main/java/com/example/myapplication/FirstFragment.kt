@@ -8,6 +8,7 @@ import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
+import android.view.View.OnClickListener
 import android.view.View.OnTouchListener
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -51,7 +52,7 @@ class FirstFragment() : Fragment(), Parcelable {
                 }
 
             }
-            return@OnTouchListener false
+            return@OnTouchListener true
         }
         return onTouchListener
     }
