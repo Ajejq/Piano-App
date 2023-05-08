@@ -1,10 +1,8 @@
 package com.example.myapplication
-
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.media.MediaPlayer
 import android.os.Bundle
-
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MotionEvent
@@ -12,7 +10,6 @@ import android.view.View
 import android.view.View.OnTouchListener
 import android.view.ViewGroup
 import com.example.myapplication.databinding.FragmentFirstBinding
-
 class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
@@ -99,7 +96,6 @@ class FirstFragment : Fragment() {
         val mp12 = MediaPlayer.create(requireContext(), R.raw.ais)
         binding.blackButtons.buttonAis.button.setOnTouchListener (makeOnTouchListener(mp12, true))
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
