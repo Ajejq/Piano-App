@@ -10,7 +10,6 @@
     android:backgroundTint="@color/white"
     android:insetTop="0dp"
     android:insetBottom="0dp"
-    android:text="@string/sound_c"
     android:textColor="@android:color/black"
     android:textAlignment="textStart"
     android:paddingStart="70dp"
@@ -20,5 +19,4 @@
     app:strokeColor="@color/black"
     app:strokeWidth="2dp"
     tools:ignore="RtlSymmetry"
-    tools:text="C"
     />
