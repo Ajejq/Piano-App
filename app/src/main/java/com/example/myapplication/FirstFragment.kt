@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.graphics.PorterDuff
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -10,6 +11,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
+import android.view.View.OnTouchListener
 import android.view.ViewGroup
 import com.example.myapplication.databinding.FragmentFirstBinding
 
@@ -36,13 +38,27 @@ class FirstFragment() : Fragment(), Parcelable {
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val mp = MediaPlayer.create(requireContext(), R.raw.note_c)
-        binding.whiteButtons.buttonC.button.setOnTouchListener { v, motionEvent ->
+    private fun makeOnTouchListener(mp: MediaPlayer, isBlack: Boolean): View.OnTouchListener {
+        val onTouchListener = OnTouchListener { v, motionEvent ->
             when (motionEvent.action) {
+                MotionEvent.ACTION_UP -> {
+                    if (isBlack){
+                        v.background.setTint(Color.BLACK);
+                    } else {
+                        v.background.setTint(Color.WHITE);
+                    }
+
+                    v.invalidate()
+                }
                 MotionEvent.ACTION_DOWN -> {
+
+                    if (isBlack) {
+                        v.background.setTint(Color.WHITE);
+                    } else {
+                        v.background.setTint(Color.GRAY);
+                    }
+                    v.invalidate()
+
                     if (mp.isPlaying) {
                         mp.stop()
                         mp.prepare()
@@ -50,268 +66,58 @@ class FirstFragment() : Fragment(), Parcelable {
                     } else {
                         mp.start()
                     }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
                 }
             }
-            return@setOnTouchListener false
+            return@OnTouchListener false
         }
+        return onTouchListener
+    }
+
+
+
+    @SuppressLint("ClickableViewAccessibility")
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        val mp = MediaPlayer.create(requireContext(), R.raw.note_c)
+        binding.whiteButtons.buttonC.button.setOnTouchListener(makeOnTouchListener(mp, false))
+
         val mp1 = MediaPlayer.create(requireContext(), R.raw.note_d)
-        binding.whiteButtons.buttonD.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp1.isPlaying) {
-                        mp1.stop()
-                        mp1.prepare()
-                        mp1.start()
-                    } else {
-                        mp1.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.whiteButtons.buttonD.button.setOnTouchListener (makeOnTouchListener(mp1, false))
+
         val mp2 = MediaPlayer.create(requireContext(), R.raw.note_e)
-        binding.whiteButtons.buttonE.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp2.isPlaying) {
-                        mp2.stop()
-                        mp2.prepare()
-                        mp2.start()
-                    } else {
-                        mp2.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.whiteButtons.buttonE.button.setOnTouchListener (makeOnTouchListener(mp2, false))
+
         val mp3 = MediaPlayer.create(requireContext(), R.raw.note_f)
-        binding.whiteButtons.buttonF.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp3.isPlaying) {
-                        mp3.stop()
-                        mp3.prepare()
-                        mp3.start()
-                    } else {
-                        mp3.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.whiteButtons.buttonF.button.setOnTouchListener (makeOnTouchListener(mp3, false))
+
         val mp4 = MediaPlayer.create(requireContext(), R.raw.note_g)
-        binding.whiteButtons.buttonG.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp4.isPlaying) {
-                        mp4.stop()
-                        mp4.prepare()
-                        mp4.start()
-                    } else {
-                        mp4.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.whiteButtons.buttonG.button.setOnTouchListener (makeOnTouchListener(mp4, false))
+
         val mp5 = MediaPlayer.create(requireContext(), R.raw.note_a)
-        binding.whiteButtons.buttonA.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp5.isPlaying) {
-                        mp5.stop()
-                        mp5.prepare()
-                        mp5.start()
-                    } else {
-                        mp5.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.whiteButtons.buttonA.button.setOnTouchListener (makeOnTouchListener(mp5, false))
+
         val mp6 = MediaPlayer.create(requireContext(), R.raw.note_h)
-        binding.whiteButtons.buttonH.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp6.isPlaying) {
-                        mp6.stop()
-                        mp6.prepare()
-                        mp6.start()
-                    } else {
-                        mp6.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.whiteButtons.buttonH.button.setOnTouchListener (makeOnTouchListener(mp6,false))
+
         val mp7 = MediaPlayer.create(requireContext(), R.raw.note_c2)
-        binding.whiteButtons.buttonC2.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp7.isPlaying) {
-                        mp7.stop()
-                        mp7.prepare()
-                        mp7.start()
-                    } else {
-                        mp7.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.whiteButtons.buttonC2.button.setOnTouchListener (makeOnTouchListener(mp7,false))
+
         val mp8 = MediaPlayer.create(requireContext(), R.raw.cis)
-        binding.blackButtons.buttonCis.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp8.isPlaying) {
-                        mp8.stop()
-                        mp8.prepare()
-                        mp8.start()
-                    } else {
-                        mp8.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.blackButtons.buttonCis.button.setOnTouchListener (makeOnTouchListener(mp8, true))
+
         val mp9 = MediaPlayer.create(requireContext(), R.raw.dis)
-        binding.blackButtons.buttonDis.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp9.isPlaying) {
-                        mp9.stop()
-                        mp9.prepare()
-                        mp9.start()
-                    } else {
-                        mp9.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.blackButtons.buttonDis.button.setOnTouchListener (makeOnTouchListener(mp9, true))
+
         val mp10 = MediaPlayer.create(requireContext(), R.raw.fis)
-        binding.blackButtons.buttonFis.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp10.isPlaying) {
-                        mp10.stop()
-                        mp10.prepare()
-                        mp10.start()
-                    } else {
-                        mp10.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.blackButtons.buttonFis.button.setOnTouchListener (makeOnTouchListener(mp10, true))
+
         val mp11 = MediaPlayer.create(requireContext(), R.raw.gis)
-        binding.blackButtons.buttonGis.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp11.isPlaying) {
-                        mp11.stop()
-                        mp11.prepare()
-                        mp11.start()
-                    } else {
-                        mp11.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.blackButtons.buttonGis.button.setOnTouchListener (makeOnTouchListener(mp11, true))
+
         val mp12 = MediaPlayer.create(requireContext(), R.raw.ais)
-        binding.blackButtons.buttonAis.button.setOnTouchListener { v, motionEvent ->
-            when (motionEvent.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    if (mp12.isPlaying) {
-                        mp12.stop()
-                        mp12.prepare()
-                        mp12.start()
-                    } else {
-                        mp12.start()
-                    }
-                    v.background.setColorFilter(-0x1f0b8adf, PorterDuff.Mode.SRC_ATOP)
-                    v.invalidate()
-                }
-                MotionEvent.ACTION_UP -> {
-                    v.background.clearColorFilter()
-                    v.invalidate()
-                }
-            }
-            return@setOnTouchListener false
-        }
+        binding.blackButtons.buttonAis.button.setOnTouchListener (makeOnTouchListener(mp12, true))
     }
 
     override fun onDestroyView() {
