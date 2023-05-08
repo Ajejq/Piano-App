@@ -15,18 +15,11 @@ import android.view.View.OnTouchListener
 import android.view.ViewGroup
 import com.example.myapplication.databinding.FragmentFirstBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
-class FirstFragment() : Fragment(), Parcelable {
+class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
-
-    constructor(parcel: Parcel) : this()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,21 +35,14 @@ class FirstFragment() : Fragment(), Parcelable {
         val onTouchListener = OnTouchListener { v, motionEvent ->
             when (motionEvent.action) {
                 MotionEvent.ACTION_UP -> {
-                    if (isBlack){
-                        v.background.setTint(Color.BLACK);
-                    } else {
-                        v.background.setTint(Color.WHITE);
-                    }
-
+                    val color = if (isBlack) Color.BLACK else Color.WHITE
+                    v.background.setTint(color)
                     v.invalidate()
                 }
+                
                 MotionEvent.ACTION_DOWN -> {
-
-                    if (isBlack) {
-                        v.background.setTint(Color.WHITE);
-                    } else {
-                        v.background.setTint(Color.GRAY);
-                    }
+                    val color = if (isBlack) Color.WHITE else Color.GRAY
+                    v.background.setTint(color)
                     v.invalidate()
 
                     if (mp.isPlaying) {
@@ -72,13 +58,9 @@ class FirstFragment() : Fragment(), Parcelable {
         }
         return onTouchListener
     }
-
-
-
     @SuppressLint("ClickableViewAccessibility")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         val mp = MediaPlayer.create(requireContext(), R.raw.note_c)
         binding.whiteButtons.buttonC.button.setOnTouchListener(makeOnTouchListener(mp, false))
@@ -124,26 +106,4 @@ class FirstFragment() : Fragment(), Parcelable {
         super.onDestroyView()
         _binding = null
     }
-
-    override fun writeToParcel(parcel: Parcel, flags: Int) {
-
-    }
-
-    override fun describeContents(): Int {
-        return 0
-    }
-
-    companion object CREATOR : Parcelable.Creator<FirstFragment> {
-        override fun createFromParcel(parcel: Parcel): FirstFragment {
-            return FirstFragment(parcel)
-        }
-
-        override fun newArray(size: Int): Array<FirstFragment?> {
-            return arrayOfNulls(size)
-        }
-    }
-//    private fun rotateTxt(text: String): String {
-//
-//
-//    }
 }
