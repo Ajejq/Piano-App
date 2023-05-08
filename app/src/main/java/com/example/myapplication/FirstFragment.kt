@@ -96,8 +96,50 @@ class FirstFragment : Fragment() {
         val mp12 = MediaPlayer.create(requireContext(), R.raw.ais)
         binding.blackButtons.buttonAis.button.setOnTouchListener (makeOnTouchListener(mp12, true))
     }
+
+    override fun onResume() {
+        super.onResume()
+
+//        playMusic(listOf(NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E,
+//            NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E,NOTE.E, NOTE.E, NOTE.E,
+//            NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E, NOTE.E,
+//            NOTE.E, NOTE.E, NOTE.E, NOTE.F, NOTE.E, NOTE.DIS, NOTE.E, NOTE.A, NOTE.C2,  ))
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
+    private fun playMusic(notes: List<NOTE>) {
+
+        for (note in notes) {
+
+            val noteToPlay = when (note) {
+                NOTE.C -> R.raw.note_c
+                NOTE.D -> R.raw.note_d
+                NOTE.E -> R.raw.note_e
+                NOTE.F -> R.raw.note_f
+                NOTE.G -> R.raw.note_g
+                NOTE.A -> R.raw.note_a
+                NOTE.H -> R.raw.note_h
+                NOTE.C2 -> R.raw.note_c2
+                NOTE.CIS -> R.raw.cis
+                NOTE.DIS -> R.raw.dis
+                NOTE.FIS -> R.raw.fis
+                NOTE.GIS -> R.raw.gis
+                NOTE.AIS -> R.raw.ais
+
+            }
+            val mp = MediaPlayer.create(requireContext(), noteToPlay)
+            mp.start()
+            Thread.sleep(150)
+
+        }
+    }
 }
+
+enum class NOTE {
+    C, D, E, F, G, A, H, C2, CIS, DIS, FIS, GIS, AIS,
+}
+
