@@ -2,11 +2,9 @@ package com.example.myapplication
 
 import android.annotation.SuppressLint
 import android.graphics.Color
-import android.graphics.PorterDuff
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
+
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MotionEvent
@@ -31,7 +29,7 @@ class FirstFragment : Fragment() {
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    private fun makeOnTouchListener(mp: MediaPlayer, isBlack: Boolean): View.OnTouchListener {
+    private fun makeOnTouchListener(mp: MediaPlayer, isBlack: Boolean): OnTouchListener {
         val onTouchListener = OnTouchListener { v, motionEvent ->
             when (motionEvent.action) {
                 MotionEvent.ACTION_UP -> {
@@ -39,7 +37,7 @@ class FirstFragment : Fragment() {
                     v.background.setTint(color)
                     v.invalidate()
                 }
-                
+
                 MotionEvent.ACTION_DOWN -> {
                     val color = if (isBlack) Color.WHITE else Color.GRAY
                     v.background.setTint(color)
